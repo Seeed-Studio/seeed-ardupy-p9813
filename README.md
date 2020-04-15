@@ -17,19 +17,19 @@ You can get more information in here [Grove_Chainable_RGB_LED](https://github.co
 ## How to binding with ArduPy
 - Install [AIP](https://github.com/Seeed-Studio/ardupy-aip)
 - Build firmware with Seeed ArduPy P9813
-```
-    aip install Seeed-Studio/seeed-ardupy-p9813
-    aip build
+```shell
+aip install Seeed-Studio/seeed-ardupy-p9813
+aip build
 ```
 - Flash new firmware to you ArduPy board
-```
-    aip flash <path of the new firmware>
+```shell
+aip flash 
 ```
 For more examples of using AIP, please refer to [AIP](https://github.com/Seeed-Studio/ardupy-aip).
 
 ## Usage
 
-```
+```python
 from arduino import grove_chainable_led
 import time
 
@@ -54,19 +54,15 @@ while True:
 
 ## API Reference
 
-- **set_rgb(*No, R, G, B*)**
+- **set_rgb(*No, R, G, B*)** : Set RGB corresponding to LED No.
+```python
+rgb_led.set_rgb(1, 255, 0, 0) # Make LED No. 1 red
+```
 
-    Set RGB corresponding to LED No.
-    ```
-    rgb_led.set_rgb(1, 255, 0, 0) # Make LED No. 1 red
-    ```
-
-- **set_hsb(*No, H, S, B*)**
-
-    Set HSB corresponding to LED No.
-    ```
-    rgb_led.set_rgb(1, 0.025, 1.0, 0.5)
-    ```
+- **set_hsb(*No, H, S, B*)** :Set HSB corresponding to LED No.
+```python
+rgb_led.set_rgb(1, 0.025, 1.0, 0.5)
+```
 
 ----
 
