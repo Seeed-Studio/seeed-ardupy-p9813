@@ -4,5 +4,9 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/Seeed-Studio/seeed-ardupy-p9813.git"
-    }
+    },
+    "dependencies": [{
+        "name": "Seeed_Arduino_P9813",
+        "url": "https://github.com/Seeed-Studio/Grove_Chainable_RGB_LED.git"
+    }]
 }
